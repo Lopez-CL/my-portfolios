@@ -1,7 +1,6 @@
 import {React, useState} from "react";
 import { useParams } from "react-router-dom";
 
-
 const Projects = (props) =>{
     const {str} = useParams();
     const {projects} = props
@@ -12,8 +11,19 @@ const Projects = (props) =>{
     const onMouseLeaveHandle = () =>{
         setCurrentProjIdx(null);
     }
+    let heading = ""
+    if(str === "coding"){
+        heading = "Projects"
+    }
+    else if (str === "inst-design") {
+        heading = "Learning Modules"
+    }
+    else{
+        heading = null
+    }
     return (
-        <>
+        <div>
+            <h3 className="port-heading">{heading}</h3>
             <div className="portfolio-projects">
                 {str === "coding"&&
                     projects.map((item,idx) =>(
@@ -25,7 +35,7 @@ const Projects = (props) =>{
                             <div className="description-container">
                                 <p className="proj-card-text"><strong>Specs:</strong> {item.techSpec}</p>
                                 <p className="proj-card-text"><strong>Description:</strong> {item.description}</p>
-                                <p className="proj-card-text"><a href={item.url}  rel="noreferrer" target="_blank">CHECK OUT THE REPO</a></p>
+                                <p className="proj-card-text"><a href={item.url} target="_blank" rel="noreferrer">CHECK OUT THE REPO</a></p>
                             </div>
                         </div>
                     ))}
@@ -39,12 +49,12 @@ const Projects = (props) =>{
                         <div className="description-container">
                             <p className="proj-card-text"><strong>Resource Type:</strong> {item.mode}</p>
                             <p className="proj-card-text"><strong>Description:</strong> {item.description}</p>
-                            <p className="proj-card-text"><a href={item.url}  rel="noreferrer" target="_blank">EXPLORE RESOURCE</a></p>
+                            <p className="proj-card-text"><a href={item.url} target="_blank" rel="noreferrer">EXPLORE RESOURCE</a></p>
                         </div>
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 
