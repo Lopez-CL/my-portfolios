@@ -11,7 +11,7 @@ const Projects = (props) =>{
     const onMouseLeaveHandle = () =>{
         setCurrentProjIdx(null);
     }
-    let heading = ""
+    let heading = "";
     if(str === "coding"){
         heading = "Projects"
     }
@@ -23,11 +23,11 @@ const Projects = (props) =>{
     }
     return (
         <div>
-            <h3 className="port-heading">{heading}</h3>
+            {heading?<h3 tabIndex='0' id="projects" className= "port-heading">{heading}</h3>:''}
             <div className="portfolio-projects">
                 {str === "coding"&&
                     projects.map((item,idx) =>(
-                        <div className={idx===currentProjIdx? "portfolio-project-active":"portfolio-project"} onMouseEnter={e => onMouseEnterHandle(idx)} onMouseLeave={e => onMouseLeaveHandle(idx)} >
+                        <div tabIndex='0' className={idx===currentProjIdx? "portfolio-project-active":"portfolio-project"} onMouseEnter={e => onMouseEnterHandle(idx)} onMouseLeave={e => onMouseLeaveHandle(idx)} >
                             <div className= "image-container">
                                 <img className={idx===currentProjIdx? "active-img":""} src={item.projIcon} alt={`icon for ${item.title}`}/>
                                 <h3>{item.title}</h3>
@@ -41,7 +41,7 @@ const Projects = (props) =>{
                     ))}
                 {str === "inst-design"&&
                 projects.map((item,idx) =>(
-                    <div className={idx===currentProjIdx? "portfolio-project-active":"portfolio-project"} onMouseEnter={e => onMouseEnterHandle(idx)} onMouseLeave={e => onMouseLeaveHandle(idx)} >
+                    <div tabIndex='0' className={idx===currentProjIdx? "portfolio-project-active":"portfolio-project"} onMouseEnter={e => onMouseEnterHandle(idx)} onMouseLeave={e => onMouseLeaveHandle(idx)} >
                         <div className= "image-container">
                             <img className={idx===currentProjIdx? "active-img":""} src={item.reSrc} alt={`icon for ${item.title}`}/>
                             <h3>{item.title}</h3>

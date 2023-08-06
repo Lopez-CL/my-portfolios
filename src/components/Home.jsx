@@ -49,7 +49,7 @@ const Home = (props) =>{
                     <div className='contact-me'>
                         {
                             contact.map((item, idx) => (
-                                <div tabindex="0">
+                                <div>
                                     <a href={item.href} target='_blank' rel="noreferrer"><img className='contact-icon' src={item.src} alt={item.alt} title={item.title} ></img></a>
                                 </div>
                             ))

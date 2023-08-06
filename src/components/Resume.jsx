@@ -3,7 +3,7 @@ import React from "react";
 const Resume = () => {
     return (
         <div id="resume-container">
-            <h3 className="resume-heading" >PROFESSIONAL EXPERIENCE</h3>
+            <h3 tabIndex='0' className="resume-heading" >PROFESSIONAL EXPERIENCE</h3>
             <div>
                 <h4 className="position">Student Success Librarian | Borough of Manhattan Community College | NY, NY (2022-Present)</h4>
                 <ul className="responsibilities" >
@@ -31,7 +31,7 @@ const Resume = () => {
                     <li>Familiarized library patrons with e-resources, computer lab software, and arrangement of print resources.</li>
                 </ul>
             </div>
-            <h3 className="resume-heading" >EDUCATION</h3>
+            <h3 className="resume-heading" tabIndex='0' >EDUCATION</h3>
             <div className="school">
                 <p>Coding Dojo | Full-Stack Developer Certificate | Remote (2022-2023)</p>
             </div>
