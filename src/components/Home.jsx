@@ -44,7 +44,7 @@ const Home = (props) =>{
                     
                 </div>
                 <div tabindex="0" id='about'>
-                    <h2 >About Chris</h2>
+                    <h3>About Me</h3>
                     <p>I'm a collaborative programmer and educator with foundational skills in full-stack web development (Python/Flask & MERN) and instructional design. Intellectually speaking, my focus lies at the intersection of social ethics, critical pedagogy, and emerging technologies (right now I'm doing a deep dive into AI ethics!) I'm always expanding my programming skills-set and seeking out new project ideas. The portfolios below capture what I have, am, and will work on. Always down to chat!</p><br></br>
                     <div className='contact-me'>
                         {

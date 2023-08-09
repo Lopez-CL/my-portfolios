@@ -11,7 +11,7 @@ const Navbar = () => {
                 <span className='span-nav'></span>
             </div> */}
             <div>
-                <h1 tabindex="0" >Chris Lopez</h1>
+                <h2 tabindex="0" >Chris Lopez</h2>
             </div>
             
         </header>
