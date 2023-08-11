@@ -10,7 +10,9 @@ const Portfolio = () =>{
     let projs = [];
     const {str} = useParams();
     if(str === 'coding'){
-        skills = langIcons
+        skills = langIcons.map((skillList, idx) =>(
+            skillList
+        ))
         projs = codeProjs
     }
     else if((str === 'inst-design')){

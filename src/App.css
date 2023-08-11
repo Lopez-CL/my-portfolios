@@ -282,15 +282,20 @@ margin: 2rem 0;
   transform: translateY(0);
 }
 
-.carousel-wrapper {
-  overflow-x: scroll;
+.carousel-container{
+  width: 100%;
   padding: 3rem;
-  display: flex;
-  /* flex-wrap: wrap;
-  flex-basis: 7fr; */
-  width: 80%;
+}
+.carousel-wrapper {
+  width: fit-content;
   margin: 0 auto;
 }
+
+.carousel-handler{
+  width: fit-content;
+  margin: 0 auto;
+}
+
 /* 
 ideas for different strategy
 @keyframes auto-scroll {
@@ -324,10 +329,22 @@ ideas for different strategy
   flex: 0 0 25%;
 } */ 
 
+@keyframes icon-fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .lang-icon{
   width: 150px;
   height: 150px;
-  margin: 0 1rem 0 1rem;
+  margin: 0 3rem 0 3rem;
+}
+
+.active-icon{
+  animation: icon-fade 3s ease-in;
 }
 
 .portfolio-projects{

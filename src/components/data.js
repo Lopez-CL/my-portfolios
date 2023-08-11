@@ -30,17 +30,19 @@ import dataliteracy from "../assets/images/proj-icons/dataliteracy.png"
 
 // objects for coding carousel
 export const langIcons = [
-    { title: "python", src: python },
-    { title: "html", src: html },
+    [{ title: "html", src: html },
     { title: "css", src: css },
-    { title: "js", src: js },
-    { title: "node", src: node },
-    { title: "react", src: react },
+    { title: "js", src: js }],
+    [{ title: "react", src: react },
     { title: "bootstrap", src: bootstrap },
-    { title: "jquery", src: jquery },
+    { title: "jquery", src: jquery }],
+    [
+    { title: "python", src: python },
+    { title: "node", src: node },
     { title: "MySql", src: MySql },
     { title: "sql", src: sql },
-    { title: "mongo", src: mongo }]
+    { title: "mongo", src: mongo }
+    ]]
 // 
 export const codeProjs = [
     {
