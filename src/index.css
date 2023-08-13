@@ -1,5 +1,4 @@
 html {
-  margin: 0;
   background-color: #d7dadd;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,10 +6,10 @@ html {
 }
 
 body{
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 #root{

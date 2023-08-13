@@ -19,9 +19,7 @@ function App() {
           <Route path="/:str"  element={<Portfolio/>}/>
           <Route path="/resume"  element={<Resume/>}/>
         </Routes>
-        <div>
           <Footer footer = {footerDown}/>
-        </div>
       </BrowserRouter>
     </div>
   );

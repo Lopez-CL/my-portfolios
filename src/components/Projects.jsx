@@ -22,7 +22,7 @@ const Projects = (props) =>{
         heading = null
     }
     return (
-        <div>
+        <>
             {heading?<h3 tabIndex='0' id="projects" className= "port-heading">{heading}</h3>:''}
             <div className="portfolio-projects">
                 {str === "coding"&&
@@ -54,7 +54,7 @@ const Projects = (props) =>{
                     </div>
                 ))}
             </div>
-        </div>
+        </>
     )
 }
 
