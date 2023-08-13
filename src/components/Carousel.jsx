@@ -28,7 +28,7 @@ const Carousel = (props) => {
         setAnimate(true);
         const timer = setTimeout(() =>{
         setAnimate(false);
-        }, 200);
+        }, 1000);
         return () => clearTimeout(timer)
     }, [idx])
     const shiftCarouselRight = e => {
@@ -45,8 +45,8 @@ const Carousel = (props) => {
             <a id="skip-link" href="#projects" onClick={handleClick}>Skip Carousel</a>
             <div  className="carousel-container" aria-description="Carousel of icons that represent programming languages and frameworks that I have practical knowledge in.">
                 <div className="carousel-wrapper">
-                    {skills[idx].map((item) => (
-                        <img className={`lang-icon ${animate?'active-icon':''}`} title={item.title} alt={`${item.title} icon`} src={item.src} />
+                    {skills[idx] && skills[idx].map((item, index) => (
+                        <img key={index} className={`lang-icon ${animate?'active-icon':''}`} title={item.title} alt={`${item.title} icon`} src={item.src} />
                     ))}
                 </div>
                 <div className="carousel-handler">

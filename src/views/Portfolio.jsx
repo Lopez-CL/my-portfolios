@@ -10,21 +10,17 @@ const Portfolio = () =>{
     let projs = [];
     const {str} = useParams();
     if(str === 'coding'){
-        skills = langIcons.map((skillList) =>(
-            skillList
-        ))
+        skills = langIcons
         projs = codeProjs
     }
     else if((str === 'inst-design')){
-        skills = edtechIcons.map((edTechSkills) =>(
-            edTechSkills
-        ))
+        skills = edtechIcons
         projs = modules
     }
     return (
         <div>
-                <Carousel skills = {skills} />
-                <Projects projects = {projs}/>
+                <Carousel skills = {skills || []} />
+                <Projects projects = {projs || []}/>
         </div>
     )
 }

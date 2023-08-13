@@ -11,7 +11,7 @@ function App() {
   const [footerDown, setFooterDown] = useState(false)
   return (
     <div className='app-container' >
-      <BrowserRouter>
+      <BrowserRouter basename="/my-portfolios">
         <Navbar/> 
         {/* I want home content of home component to show throughout SPA */}
           <Home footer = {footerDown} setFooterDown = {setFooterDown}/>
