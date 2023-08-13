@@ -61,7 +61,7 @@ const Home = (props) =>{
             </div>
             <div id='project-categories'>
                 {categories.map((category, idx) =>(
-                    <div tabindex="0" role='button' aria-roledescription={`navigate to ${category.title} by clicking button`} className='portfolios active-hover' 
+                    <div id='project-wrapper' tabindex="0" role='button' aria-roledescription={`navigate to ${category.title} by clicking button`} className='portfolios active-hover' 
                     onMouseEnter={e => handleMouseEnter(idx)} 
                     onMouseLeave={e => handleMouseLeave(idx)} 
                     onClick={ e => checkFooter(footer,`/${category.path}`)} >

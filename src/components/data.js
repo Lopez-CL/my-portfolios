@@ -48,7 +48,7 @@ export const codeProjs = [
     {
         projIcon: superSocial,
         title: "Super Social Reader",
-        gitHubUrl: "https://github.com/Lopez-CL/super_social_reader",
+        url: "https://github.com/Lopez-CL/super_social_reader",
         techSpec: "Python, Flask, SQL, HTML, CSS, jQuery, AJAX",
         description: "A social reader tracker for superhero comic book readers to connect, discuss, and keep track of the comics they read.",
     },
@@ -61,15 +61,15 @@ export const codeProjs = [
     }]
 // objects for inst-design interface
 export const edtechIcons = [
-    { title: "audition", src: audition },
+    [{ title: "audition", src: audition },
     { title: "canva", src: canva },
-    { title: "h5p", src: h5p },
-    { title: "hypothesis", src: hypothesis },
+    { title: "h5p", src: h5p }],
+    [{ title: "hypothesis", src: hypothesis },
     { title: "moovly", src: moovly },
-    { title: "prempro", src: prempro },
-    { title: "tableau", src: tableau },
+    { title: "prempro", src: prempro }],
+    [{ title: "tableau", src: tableau },
     { title: "zotero", src: zotero },
-    { title: "wordpress", src: wordpress },
+    { title: "wordpress", src: wordpress }]
 ]
 //objects for instructional design modules and lesson plans
 export const modules = [

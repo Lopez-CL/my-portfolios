@@ -190,6 +190,7 @@ span{
 .contact-me{
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   justify-content: space-around;
 }
@@ -283,55 +284,24 @@ margin: 2rem 0;
 }
 
 .carousel-container{
-  width: 100%;
-  padding: 3rem;
-}
-.carousel-wrapper {
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.carousel-handler{
-  width: fit-content;
-  margin: 0 auto;
-}
-
-/* 
-ideas for different strategy
-@keyframes auto-scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(calc(-25% * 11));
-  }
-}
-
-.carousel-container {
-  margin: 0 auto;
-  align-items: center;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x:hidden;
   width: 90%;
-  height: 200px;
-  margin: 20px;
+  padding: 3rem;
+  margin: 0 auto;
 }
-
 .carousel-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  animation: auto-scroll 40s linear infinite;
-  /* transition: transform 5s ease-in-out;  } */
-
-/* .carousel-wrapper > div {
-  flex: 0 0 25%;
-} */ 
+  width: fit-content;
+  margin: 0 auto;
+}
 
 @keyframes icon-fade{
   0%{
     opacity: 0;
+  }
+  25%{
+    opacity: .25;
+  }
+  50%{
+    opacity: .5;
   }
   100%{
     opacity: 1;
@@ -344,7 +314,30 @@ ideas for different strategy
 }
 
 .active-icon{
-  animation: icon-fade 3s ease-in;
+  animation: icon-fade 2s ease-out;
+}
+
+.carousel-handler{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.shift-key{
+  display: inline-block;
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+  margin-top: 1rem;
+
+}
+.move-left{
+    border-left: solid 20px transparent;
+    border-right: solid 20px black;
+    margin-right: 2.5rem;
+}
+
+.move-right{
+  border-right: solid 20px transparent;
+  border-left: solid 20px black;
 }
 
 .portfolio-projects{
@@ -366,9 +359,9 @@ ideas for different strategy
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  box-shadow: 0px 0px 0px 0px none;
+  box-shadow: 0px 0px 0px 0px transparent;
   transition: box-shadow ease-in-out .5s;
-  flex: 0 1 25%;
+  flex: 0 1 30%;
   border-radius: 10px;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -379,7 +372,7 @@ ideas for different strategy
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  flex: 0 1 25%;
+  flex: 0 1 30%;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: -6px 12px 0px 3px black;
@@ -493,12 +486,31 @@ ideas for different strategy
 
 /******** As screen narrows ********/
 @media only screen and (max-width: 985px){
-  #project-categories{
-    display: flex;
+  #home-container{
     flex-direction: column;
   }
+  #project-categories{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    row-gap: 2rem;
+    margin: 0;
+  }
+  /* #project-categories:not(:last-child){
+    margin-bottom: 1.5rem;
+  } */
   .portfolios{
-  width: auto;
+  width: 200%;
+  }
+  .portfolio-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .portfolio-project,.portfolio-project-active{
+    flex: 0 1 auto;
+    width: 600px;
+    margin: 1rem auto;
   }
 }
 
@@ -601,13 +613,13 @@ ideas for different strategy
       border-radius: 10px;
   }
 
-  .portfolio-projects {
+  /* .portfolio-projects {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
       flex: 0 1 auto;
-  }
-
+  } */
+/* 
   .portfolio-project {
       background-color: hsla(0, 0%, 100%, .8);
       color: black !important;
@@ -618,7 +630,6 @@ ideas for different strategy
       border-radius: 10px;
       padding: 1rem;
       margin-bottom: 2rem;
-      /* min-width: 400px !important; */
   }
   
   .portfolio-project-active {
@@ -631,7 +642,7 @@ ideas for different strategy
       border-radius: 10px;
       padding: 1rem;
       margin-bottom: 2rem;
-  }
+  } */
   
   .responsibilities li {
       list-style: none;

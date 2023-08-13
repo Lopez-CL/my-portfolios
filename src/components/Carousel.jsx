@@ -28,7 +28,7 @@ const Carousel = (props) => {
         setAnimate(true);
         const timer = setTimeout(() =>{
         setAnimate(false);
-        }, 500);
+        }, 200);
         return () => clearTimeout(timer)
     }, [idx])
     const shiftCarouselRight = e => {
@@ -50,8 +50,8 @@ const Carousel = (props) => {
                     ))}
                 </div>
                 <div className="carousel-handler">
-                    <span onClick={shiftCarouselLeft}> Left </span>
-                    <span onClick={shiftCarouselRight}> Right </span>
+                    <span role="button" aria-roledescription="Shifts carousel of images to the left" style={idx===0?{opacity:.5}:{opacity:1}}  className="shift-key move-left" onClick={shiftCarouselLeft}></span>
+                    <span role="button" aria-roledescription="Shifts carousel of images to the right" style={idx===2?{opacity:.5}:{opacity:1}}  className="shift-key move-right" onClick={shiftCarouselRight}></span>
                 </div>
             </div>
 
