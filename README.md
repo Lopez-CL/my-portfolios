@@ -1,5 +1,4 @@
 # myPortfolio
-*Site in Progress*
 
 __Description:__ This is my portfolio capturing my multi-disciplinary background as a digital literacy & emerging technologies librarian and an aspiring full stack software engineer. A couple of details about the site:
 
