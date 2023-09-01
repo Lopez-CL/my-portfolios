@@ -27,6 +27,7 @@ import articles from "../assets/images/proj-icons/articles.png"
 import findingimages from "../assets/images/proj-icons/findingimages.png"
 import annotatedbibs from "../assets/images/proj-icons/annotatedbibs.png"
 import dataliteracy from "../assets/images/proj-icons/dataliteracy.png"
+import aiGuide from '../assets/images/proj-icons/AI_literacy.png'
 
 // objects for coding carousel
 export const langIcons = [
@@ -79,6 +80,13 @@ export const modules = [
         mode: "Slides",
         url: "https://www.canva.com/design/DAFb466sOPo/qQ3esq1sXlpwWTq6v5R-mQ/view?utm_content=DAFb466sOPo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
         description: "Registered students can create, update, and delete research project to-do lists that help them create tasks, keep track of project status, and categorize research projects by subject."
+    },
+    {
+        reSrc: aiGuide,
+        title: "AI Literacy Research Guide",
+        mode: "Website",
+        url: "https://bmcc.libguides.com/ai-literacy",
+        description: "This guide contains resources and instructional modules to cultivate critical AI Literacy at the Borough of Manhattan Community College."
     },
     {
         reSrc: infoLit,
