@@ -10,7 +10,7 @@ const Navbar = () => {
                 <span className='span-nav bottom-space'></span>
                 <span className='span-nav'></span>
             </div> */}
-            <div>
+            <div id='heading'>
                 <h2 tabindex="0" >Chris Lopez</h2>
             </div>
             

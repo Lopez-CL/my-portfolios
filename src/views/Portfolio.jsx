@@ -18,7 +18,7 @@ const Portfolio = () =>{
         projs = modules
     }
     return (
-        <div>
+        <div className="portfolio-container">
                 <Carousel skills = {skills || []} />
                 <Projects projects = {projs || []}/>
         </div>
