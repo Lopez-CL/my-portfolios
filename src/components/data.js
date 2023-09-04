@@ -28,6 +28,9 @@ import findingimages from "../assets/images/proj-icons/findingimages.png"
 import annotatedbibs from "../assets/images/proj-icons/annotatedbibs.png"
 import dataliteracy from "../assets/images/proj-icons/dataliteracy.png"
 import aiGuide from '../assets/images/proj-icons/AI_literacy.png'
+import myPort from '../assets/images/proj-icons/myPortfolios.png'
+import sobreMesa from '../assets/images/proj-icons/sobreMesa.png'
+import chatBot from '../assets/images/proj-icons/chatbot_playground.png'
 
 // objects for coding carousel
 export const langIcons = [
@@ -59,6 +62,27 @@ export const codeProjs = [
         url: "https://github.com/Coding-Dojo-Project-Team/Researcher-Village",
         techSpec: "Python, Flask, SQL, HTML, CSS, jQuery",
         description: "Registered students can create, update, and delete research project to-do lists that help them create tasks, keep track of project status, and categorize research projects by subject."
+    },
+    {
+        projIcon: myPort,
+        title: "My Portfolios",
+        url: "https://github.com/Lopez-CL/my-portfolios",
+        techSpec: "React, HTML, CSS",
+        description: "My portfolio site detailing work in coding and instructional design. Obviously, I have deployed this application. I used GitHub pages and the gh-pages package to host a live version of the site."
+    },
+    {
+        projIcon: sobreMesa,
+        title: "Sobre Mesa",
+        url: "https://github.com/Lopez-CL/sobreMesa",
+        techSpec: "HTML, CSS, JavaScript, React, Material UI, Nodejs, MongoDB, Mongoose",
+        description: "IN PROGRESS: MERN application. Idea for the web application arose from my interest in collecting the delicious meals prepared and shared across my Puerto Rican family. Utilizes the Material UI framework to enhance UI among other features."
+    }, 
+    {
+        projIcon: chatBot,
+        title: "Chatbot Playground",
+        url: "https://github.com/Lopez-CL/chatbot_playground",
+        techSpec: "HTML, CSS, JavaScript, Python, Flask, mySQL, AJAX, Animate.css ",
+        description: "IN PROGRESS: One of my future Python & Flask projects will call to OpenAI's API, so this project is my attempt to test the api, decide early on UI possibilities, etc. before I build it into my other project (Researcher Village+)."
     }]
 // objects for inst-design interface
 export const edtechIcons = [

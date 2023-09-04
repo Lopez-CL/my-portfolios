@@ -50,8 +50,8 @@ const Carousel = (props) => {
                     ))}
                 </div>
                 <div className="carousel-handler">
-                    <span role="button" aria-roledescription="Shifts carousel of images to the left" style={idx===0?{opacity:.5}:{opacity:1}}  className="shift-key move-left" onClick={shiftCarouselLeft}></span>
-                    <span role="button" aria-roledescription="Shifts carousel of images to the right" style={idx===2?{opacity:.5}:{opacity:1}}  className="shift-key move-right" onClick={shiftCarouselRight}></span>
+                    <span role="button" aria-roledescription="Shifts carousel of images to the left" style={idx===0?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-left" onClick={shiftCarouselLeft}></span>
+                    <span role="button" aria-roledescription="Shifts carousel of images to the right" style={idx===2?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-right" onClick={shiftCarouselRight}></span>
                 </div>
             </div>
 
