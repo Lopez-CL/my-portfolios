@@ -31,7 +31,7 @@ import aiGuide from '../assets/images/proj-icons/AI_literacy.png'
 import myPort from '../assets/images/proj-icons/myPortfolios.png'
 import sobreMesa from '../assets/images/proj-icons/sobreMesa.png'
 import chatBot from '../assets/images/proj-icons/chatbot_playground.png'
-
+import aiBrainstorm from '../assets/images/proj-icons/brainstrom.png'
 // objects for coding carousel
 export const langIcons = [
     [{ title: "html", src: html },
@@ -99,18 +99,25 @@ export const edtechIcons = [
 //objects for instructional design modules and lesson plans
 export const modules = [
     {
+        reSrc: aiBrainstorm,
+        title: "Brainstorming with AI",
+        mode: "H5P Module",
+        url: "https://bmcc.libguides.com/ai-literacy/learning-modules#s-lg-box-30819029",
+        description: "An interactive module walking students through ways to effectively and ethically utilize AI powered chatbots to brainstorm research topics for an open-ended essay."
+    },
+    {
         reSrc: aiLec,
         title: "AI Literacy Intro",
         mode: "Slides",
         url: "https://www.canva.com/design/DAFb466sOPo/qQ3esq1sXlpwWTq6v5R-mQ/view?utm_content=DAFb466sOPo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
-        description: "Registered students can create, update, and delete research project to-do lists that help them create tasks, keep track of project status, and categorize research projects by subject."
+        description: "Slides from my digital literacy introductory workshop on generative AI and AI literacy."
     },
     {
         reSrc: aiGuide,
         title: "AI Literacy Research Guide",
         mode: "Website",
         url: "https://bmcc.libguides.com/ai-literacy",
-        description: "This guide contains resources and instructional modules to cultivate critical AI Literacy at the Borough of Manhattan Community College."
+        description: "This guide contains resources and short-essays on ways to cultivate critical AI Literacy. This resource was designed for students at the Borough of Manhattan Community College."
     },
     {
         reSrc: infoLit,
