@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/my-portfolios/static/css/main.fc969c2f.css",
-    "main.js": "/my-portfolios/static/js/main.1757cd6c.js",
+    "main.css": "/my-portfolios/static/css/main.b01e74e2.css",
+    "main.js": "/my-portfolios/static/js/main.4dd94e0e.js",
     "static/js/787.9508475a.chunk.js": "/my-portfolios/static/js/787.9508475a.chunk.js",
     "static/media/canva.png": "/my-portfolios/static/media/canva.0b7d82c22d4d9d0aee79.png",
+    "static/media/brainstrom.png": "/my-portfolios/static/media/brainstrom.36284f06809e96a0ea48.png",
     "static/media/profile.png": "/my-portfolios/static/media/profile.5f496823be7274dc97b5.png",
     "static/media/AI_literacy.png": "/my-portfolios/static/media/AI_literacy.6a172bc72c0ca6984c2f.png",
     "static/media/infoLit.png": "/my-portfolios/static/media/infoLit.c22339a7a6aa11b5c570.png",
@@ -41,12 +42,12 @@
     "static/media/prempro.png": "/my-portfolios/static/media/prempro.b228d0c2566bc961ffd2.png",
     "static/media/tableau.png": "/my-portfolios/static/media/tableau.25534260961c9d3cf4ec.png",
     "index.html": "/my-portfolios/index.html",
-    "main.fc969c2f.css.map": "/my-portfolios/static/css/main.fc969c2f.css.map",
-    "main.1757cd6c.js.map": "/my-portfolios/static/js/main.1757cd6c.js.map",
+    "main.b01e74e2.css.map": "/my-portfolios/static/css/main.b01e74e2.css.map",
+    "main.4dd94e0e.js.map": "/my-portfolios/static/js/main.4dd94e0e.js.map",
     "787.9508475a.chunk.js.map": "/my-portfolios/static/js/787.9508475a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc969c2f.css",
-    "static/js/main.1757cd6c.js"
+    "static/css/main.b01e74e2.css",
+    "static/js/main.4dd94e0e.js"
   ]
 }
