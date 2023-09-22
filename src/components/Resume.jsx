@@ -5,12 +5,12 @@ const Resume = () => {
         <div id="resume-container">
             <h3 tabIndex='0' className="resume-heading" >PROFESSIONAL EXPERIENCE</h3>
             <div>
-                <h4 className="position">Student Success Librarian | Borough of Manhattan Community College | NY, NY (2022-Present)</h4>
+                <h4 className="position">Digital Literacy & Outreach Librarian | Borough of Manhattan Community College | NY, NY (2022-Present)</h4>
                 <ul className="responsibilities" >
-                    <li>Originated a Library student-centered work study cohort of four students, which provides professional development opportunities and peer-lead services for students.</li>
-                    <li>Coordinates student workshops on emerging technologies for use in educational contexts.</li>
-                    <li>Provides in-depth research assistance and consultation on educational technologies.</li>
-                    <li>Lead designer and strategist for Library Instagram, @bmcclibrary.</li>
+                    <li>Originated and Supervises a Library student-centered work study cohort of five students, which provides professional development opportunities and peer-lead services for students.</li>
+                    <li>Provides consultation and instruction on sociology of technology, the use of communication technologies in the classroom, and information seeking in digital contexts..</li>
+                    <li>Orchestrates discipline specific information and digital & A.I. literacy sessions for students, specifically in prompt engineering.</li>
+                    <li>Lead designer and strategist for Library Instagram, <a id="IG-Link" href="https://www.instagram.com/bmcclibrary/" target="_blank">@bmcclibrary</a>.</li>
                 </ul>
             </div>
             <div>

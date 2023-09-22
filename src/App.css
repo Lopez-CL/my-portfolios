@@ -472,6 +472,9 @@ margin: 2rem 0;
   margin-bottom: 1rem;
   font-weight: bold;
 }
+#IG-Link{
+  color:#000000;
+}
 
 /* 6. @Media Queries
 =================================================== 
