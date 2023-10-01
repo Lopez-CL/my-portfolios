@@ -43,15 +43,15 @@ const Carousel = (props) => {
         <>
             {heading ? <h3 tabIndex='0' className="port-heading">{heading}</h3> : ''}
             <a id="skip-link" href="#projects" onClick={handleClick}>Skip Carousel</a>
-            <div  className="carousel-container" aria-description="Carousel of icons that represent programming languages and frameworks that I have practical knowledge in.">
-                <div className="carousel-wrapper">
+            <div  className="carousel-container">
+                <div className="carousel-wrapper" aria-description="Carousel of icons that represent programming languages and frameworks that I have practical knowledge in.">
                     {skills[idx] && skills[idx].map((item, index) => (
-                        <img key={index} className={`lang-icon ${animate?'active-icon':''}`} title={item.title} alt={`${item.title} icon`} src={item.src} />
+                        <img tabIndex='0' key={index} className={`lang-icon ${animate?'active-icon':''}`} title={item.title} alt={`${item.title} icon`} src={item.src} />
                     ))}
                 </div>
                 <div className="carousel-handler">
-                    <span role="button" aria-roledescription="Shifts carousel of images to the left" style={idx===0?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-left" onClick={shiftCarouselLeft}></span>
-                    <span role="button" aria-roledescription="Shifts carousel of images to the right" style={idx===2?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-right" onClick={shiftCarouselRight}></span>
+                    <button tabIndex='0' role="button" aria-roledescription="Shifts carousel of images to the left" style={idx===0?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-left" onClick={shiftCarouselLeft}></button>
+                    <button tabIndex='0' role="button" aria-roledescription="Shifts carousel of images to the right" style={idx===2?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-right" onk onClick={shiftCarouselRight}></button>
                 </div>
             </div>
 

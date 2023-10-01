@@ -61,7 +61,7 @@ const Home = (props) =>{
             </div>
             <div id='project-categories'>
                 {categories.map((category, idx) =>(
-                    <div id='project-wrapper' tabindex="0" role='button' aria-roledescription={`navigate to ${category.title} by clicking button`} className='portfolios active-hover' 
+                    <button id='project-wrapper' tabindex="0" role='button' aria-roledescription={`navigate to ${category.title} by clicking button`} className='portfolios active-hover' 
                     onMouseEnter={e => handleMouseEnter(idx)} 
                     onMouseLeave={e => handleMouseLeave(idx)} 
                     onClick={ e => checkFooter(footer,`/${category.path}`)} >
@@ -70,7 +70,7 @@ const Home = (props) =>{
                             <img className={`cat-pic ${idx === indexHovered? "shake":''}`}   src={category.src} alt={category.alt} onClick={e=>navigate(`/${category.path}`)} />
                             <p to={`/${category.path}`} className={`${idx === indexHovered? "active-heading link":'link'}`}>{category.heading.toUpperCase()}</p>
                         </div>
-                    </div>
+                    </button>
                 ))}
             </div>
         </div>

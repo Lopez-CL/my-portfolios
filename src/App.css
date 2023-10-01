@@ -204,7 +204,9 @@ flex: 0 1 1fr;
 justify-content: center;
 margin: 2rem 0;
 }
-
+#project-wrapper{
+  background-color: transparent;
+}
 .portfolios {
   border: 3px solid hsla(0, 0%, 3%, 0.8);
   margin: 0 1em;
@@ -229,11 +231,6 @@ margin: 2rem 0;
 }
 
 .active-hover:hover {
-  border: 3px solid hsla(0, 0%, 0%, 0.8);
-  transition: border .5s ease-in-out;
-  border-radius: 15px;
-  padding: .5em 1em;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -246,6 +243,13 @@ margin: 2rem 0;
   transition: text-decoration 1s ease-in-out;
 }
 
+:where(#project-wrapper:focus) :where(.category > img)  {  
+  animation: icon-shake .5s linear;
+}
+:where(#project-wrapper:focus) :where(.category > p)  {  
+  text-decoration: underline !important;
+transition: text-decoration 1s ease-in-out !important;
+}
 
 .cat-pic {
   max-width: 50px;
@@ -321,6 +325,7 @@ margin: 2rem 0;
 }
 
 .shift-key{
+  background-color: transparent;
   display: inline-block;
   border-top: solid 20px transparent;
   border-bottom: solid 20px transparent;
