@@ -32,7 +32,7 @@ const Home = (props) =>{
     const contact = [
         { src: email, alt: "email icon", title: 'Reach out via email', href: 'mailto:darkwing24@duck.com' },
         { src: github, alt: "github icon", title: 'Reach out via GitHub', href: 'https://github.com/Lopez-CL' },
-        { src: linkedIn, alt: "email icon", title: 'Reach out via LinkedIn', href: 'https://www.linkedin.com/in/christopher-lee-lopez' },
+        { src: linkedIn, alt: "LinkedIn icon", title: 'Reach out via LinkedIn', href: 'https://www.linkedin.com/in/christopher-lee-lopez' },
     ]
     return (
         <div id='home-body'>
@@ -44,18 +44,19 @@ const Home = (props) =>{
                     
                 </div>
                 <div tabindex="0" id='about'>
-                    <h3>About Me</h3>
+                    <h2 tabindex="0" >About Me</h2>
                     <p>I'm a collaborative programmer and educator with foundational skills in full-stack web development (Python/Flask & MERN) and instructional design. Intellectually speaking, my focus lies at the intersection of social ethics, critical pedagogy, and emerging technologies (right now I'm doing a deep dive into AI ethics!) I'm always expanding my programming skills-set and seeking out new project ideas. The portfolios below capture what I have, am, and will work on. Always down to chat!</p><br></br>
                     <div className='contact-me'>
                         {
                             contact.map((item, idx) => (
                                 <div>
-                                    <a href={item.href} target='_blank' rel="noreferrer"><img className='contact-icon' src={item.src} alt={item.alt} title={item.title} ></img></a>
+                                    {/* Will eventually separate email icon and make a form component */}
+                                    <a tabindex="0" href={item.href} target='_blank' rel="noreferrer"><img aria-description={`When icon clicked, user initiates the action: ${item.title}`} className='contact-icon' src={item.src} alt={item.alt} title={item.title} ></img></a>
                                 </div>
                             ))
                         }
                     </div>
-                    <p>Toggle through my portfolios by using the buttons below</p><br></br>
+                    <p tabindex="0" >Toggle through my portfolios by using the buttons below</p><br></br>
                     <p><em>¡Pa'Lante!</em></p>
                 </div>
             </div>
