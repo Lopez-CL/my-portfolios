@@ -32,6 +32,8 @@ import myPort from '../assets/images/proj-icons/myPortfolios.png'
 import sobreMesa from '../assets/images/proj-icons/sobreMesa.png'
 import chatBot from '../assets/images/proj-icons/chatbot_playground.png'
 import aiBrainstorm from '../assets/images/proj-icons/brainstrom.png'
+import promptEngineer from '../assets/images/proj-icons/promptEngineer.png'
+import socialMediaCare from '../assets/images/proj-icons/socialMediaMentalHealth.png'
 // objects for coding carousel
 export const langIcons = [
     [{ title: "html", src: html },
@@ -99,6 +101,20 @@ export const edtechIcons = [
 //objects for instructional design modules and lesson plans
 export const modules = [
     {
+        reSrc: promptEngineer,
+        title: "Prompt Engineering & Academic Research",
+        mode: "Slides",
+        url: "https://www.canva.com/design/DAFzChkNCFM/7JFEB6mAb1p3N1pqOUyMHg/view?utm_content=DAFzChkNCFM&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+        description: "My presentation slides introducing community college students to intersection of prompt engineering for Large Language Models & academic research."
+    },
+    {
+        reSrc: socialMediaCare,
+        title: "Taking Care of your Self(ie)",
+        mode: "Slides",
+        url: "https://www.canva.com/design/DAFuQG_Ni6Q/GMUHz63_SCMNvVtk4n4ozw/view?utm_content=DAFuQG_Ni6Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+        description: "Slides from my social media and well-being workshop, which helped students imagine ways to engage social media platforms while protecting their data and prioritizing their overall well-being."
+    },
+    {
         reSrc: aiBrainstorm,
         title: "Brainstorming with AI",
         mode: "H5P Module",
@@ -131,7 +147,7 @@ export const modules = [
         title: "Positionality and Resources",
         mode: "H5P Module",
         url: "https://uclalibrary.github.io/research-tips/positionality/",
-        description: "This resource introduces learners to the concept of positionality, explains how their positionality shapes their research process, and helps them identify ways to remain aware of their positionality."
+        description: "This resource introduces learners to the concept of positionality, explains how their positionality shapes their research process, and helps them identify ways to rn aware of their positionality."
     },
     {
         reSrc: articles,

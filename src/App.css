@@ -372,6 +372,7 @@ transition: text-decoration 1s ease-in-out !important;
   flex: 0 1 300px;
   border-radius: 10px;
   padding: 1rem;
+  margin-right: 1.5rem;
   margin-bottom: 2rem;
 }
 .portfolio-project-active{
@@ -417,7 +418,9 @@ transition: text-decoration 1s ease-in-out !important;
   filter: grayscale(100%);
   transition: filter ease-in-out .3s;
 }
-
+.image-container h3{
+  line-height: 3rem;
+}
 .active-img{
   max-width: 60%;
   max-height: 60%;
@@ -437,9 +440,15 @@ transition: text-decoration 1s ease-in-out !important;
 
 .proj-card-text {
   font-size: 1.5rem;
+  line-height: 2rem;
 }
+
 .proj-card-text a {
   font-size: 1.2rem;
+}
+
+.proj-description{
+  margin-top: 1rem;
 }
 
 .module-container{

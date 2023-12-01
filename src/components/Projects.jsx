@@ -48,7 +48,7 @@ const Projects = (props) =>{
                         </div>
                         <div className="description-container">
                             <p className="proj-card-text"><strong>Resource Type:</strong> {item.mode}</p>
-                            <p className="proj-card-text"><strong>Description:</strong> {item.description}</p>
+                            <p className="proj-card-text proj-description"><strong>Description:</strong> {item.description}</p>
                             <p className="proj-card-text"><a href={item.url} target="_blank" rel="noreferrer">EXPLORE RESOURCE</a></p>
                         </div>
                     </div>
