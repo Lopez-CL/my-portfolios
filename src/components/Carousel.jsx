@@ -1,4 +1,4 @@
-import { useRef, useState,useEffect } from "react";
+import { useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 const Carousel = (props) => {
     const anchor = useRef(null)
@@ -24,20 +24,27 @@ const Carousel = (props) => {
     else {
         heading = null
     }
-    useEffect(() =>{
-        setAnimate(true);
-        const timer = setTimeout(() =>{
-        setAnimate(false);
-        }, 1000);
-        return () => clearTimeout(timer)
-    }, [idx])
     const shiftCarouselRight = e => {
         console.log(idx)
-        idx < 2 && setIdx(idx + 1)
+        if(idx < 2){
+            setIdx(idx + 1)
+            setAnimate(true);
+            const timer = setTimeout(() =>{
+            setAnimate(false);
+            }, 3000);
+        return () => clearTimeout(timer)
+        }
     }
     const shiftCarouselLeft = e => {
         console.log(idx)
-        idx > 0 && setIdx(idx - 1)
+        if(idx > 0){
+            setIdx(idx - 1)
+            setAnimate(true);
+            const timer = setTimeout(() =>{
+            setAnimate(false);
+            }, 3000);
+            return () => clearTimeout(timer)
+        }
     }
     return (
         <>
@@ -50,8 +57,8 @@ const Carousel = (props) => {
                     ))}
                 </div>
                 <div className="carousel-handler">
-                    <button tabIndex='0' role="button" aria-roledescription="Shifts carousel of images to the left" style={idx===0?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-left" onClick={shiftCarouselLeft}></button>
-                    <button tabIndex='0' role="button" aria-roledescription="Shifts carousel of images to the right" style={idx===2?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-right" onk onClick={shiftCarouselRight}></button>
+                    <button tabIndex='0' aria-roledescription="Shifts carousel of images to the left" style={idx===0?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-left" onClick={shiftCarouselLeft}></button>
+                    <button tabIndex='0' aria-roledescription="Shifts carousel of images to the right" style={idx===2?{opacity:.5}:{opacity:1, cursor:'pointer'}}  className="shift-key move-right" onClick={shiftCarouselRight}></button>
                 </div>
             </div>
 

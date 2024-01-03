@@ -321,7 +321,7 @@ transition: text-decoration 1s ease-in-out !important;
 }
 
 .active-icon{
-  animation: icon-fade 2s ease-out;
+  animation: icon-fade 2.5s linear;
 }
 
 .carousel-handler{
