@@ -60,11 +60,19 @@ a, a:visited{
   color: white;
 }
 
+div#about a{
+  color: #000000;
+}
+div#about a:hover{
+  color: #0b0b0b;
+  text-decoration: none;
+}
+
 a:hover{
   opacity: .8;
   cursor: pointer;
 }
-a:active{
+a:active, div#about a:active{
   color: hsl(271, 79%, 48%);
 }
 
@@ -384,12 +392,16 @@ transition: text-decoration 1s ease-in-out !important;
   flex: 0 1 300px;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: -6px 12px 0px 3px black;
+  box-shadow: -6px 12px 0px .5px black;
   transition: box-shadow .5s ease-in-out;
+  padding: 1rem;
+  margin-right: 1.5rem;
   margin-bottom: 2rem;
 }
 .portfolio-project:focus{
   background-color: white;
+  padding: 1rem;
+  margin-right: 1.5rem;
   color: black !important;
   display: flex;
   flex-flow: column nowrap;
@@ -399,7 +411,7 @@ transition: text-decoration 1s ease-in-out !important;
   width: 300px;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: -6px 12px 0px 3px black;
+  box-shadow: -6px 12px 0px .5px black;
   transition: box-shadow .5s ease-in-out;
   margin-bottom: 2rem;
 }

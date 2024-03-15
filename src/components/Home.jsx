@@ -45,7 +45,7 @@ const Home = (props) =>{
                 </div>
                 <div tabindex="0" id='about'>
                     <h2 tabindex="0" >About Me</h2>
-                    <p>I'm a collaborative programmer and educator with foundational skills in full-stack web development (Python/Flask & MERN) and instructional design. Intellectually speaking, my focus lies at the intersection of social ethics, critical pedagogy, and emerging technologies (right now I'm doing a deep dive into AI ethics!) I'm always expanding my programming skills-set and seeking out new project ideas. The portfolios below capture what I have, am, and will work on. Always down to chat!</p><br></br>
+                    <p>I'm a front-end developer and UX Designer at <a href="https://library.ucsd.edu" target="_blank">UC San Diego Library</a> with foundational skills in full-stack web development (Python/Flask & MERN) and instructional design. My work brings together my passions for universal design, critical pedagogy, and web development. I'm always expanding my programming skills-set and seeking out new project ideas. In addition to what you'll find across UCSD Library's web properties, my portfolios below capture what I have, am, and will work on. Always down to chat!</p><br></br>
                     <div className='contact-me'>
                         {
                             contact.map((item, idx) => (

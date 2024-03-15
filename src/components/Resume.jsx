@@ -5,7 +5,20 @@ const Resume = () => {
         <div id="resume-container">
             <h3 tabIndex='0' className="resume-heading" >PROFESSIONAL EXPERIENCE</h3>
             <div>
-                <h4 className="position">Digital Literacy & Outreach Librarian | Borough of Manhattan Community College | NY, NY (2022-Present)</h4>
+                <h4 className="position">Front-End Developer & UX Designer | University of California San Diego | SD, CA (2024-Present)</h4>
+                <ul className="responsibilities" >
+                    <li>Mentors student UX designers in a team-based approach to frontend development and design</li>
+                    <li>Utilizes JavaScript frameworks, such as Angular, to build and enhance single-page applications</li>
+                    <li>Translating complex Figma wireframes into functional, documented code</li>
+                    <li>Utilizes JavaScript frameworks, such as Angular, to build and enhance single-page applications</li>
+                    <li>Co-creating learning resources with the UX lead for site content editors, resolving A and AA accessibility issues across the Library's web properties</li>
+                    <li>Bridges the worlds of design and development by crafting creative, innovative solutions that elevate the Library's digital presence</li>
+                    <li>Co-creates learning resources with the UX lead for site content editors, resolving A and AA accessibility issues across the Library's web properties</li>
+                    <li>Creates hybrid process documentation that incorporates development concepts into the design process at an early stage</li>
+                </ul>
+            </div>
+            <div>
+                <h4 className="position">Digital Literacy & Outreach Librarian | Borough of Manhattan Community College | NY, NY (2022-2024)</h4>
                 <ul className="responsibilities" >
                     <li>Originated and Supervises a Library student-centered work study cohort of five students, which provides professional development opportunities and peer-lead services for students.</li>
                     <li>Provides consultation and instruction on sociology of technology, the use of communication technologies in the classroom, and information seeking in digital contexts..</li>
