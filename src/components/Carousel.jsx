@@ -25,14 +25,13 @@ const Carousel = (props) => {
         heading = null
     }
     const shiftCarouselRight = e => {
-        console.log(idx)
         if(idx < 2){
             setIdx(idx + 1)
             setAnimate(true);
             const timer = setTimeout(() =>{
             setAnimate(false);
+            clearTimeout(timer)
             }, 3000);
-        return () => clearTimeout(timer)
         }
     }
     const shiftCarouselLeft = e => {
@@ -42,8 +41,8 @@ const Carousel = (props) => {
             setAnimate(true);
             const timer = setTimeout(() =>{
             setAnimate(false);
+            clearTimeout(timer)
             }, 3000);
-            return () => clearTimeout(timer)
         }
     }
     return (

@@ -29,7 +29,6 @@ import annotatedbibs from "../assets/images/proj-icons/annotatedbibs.png"
 import dataliteracy from "../assets/images/proj-icons/dataliteracy.png"
 import aiGuide from '../assets/images/proj-icons/AI_literacy.png'
 import myPort from '../assets/images/proj-icons/myPortfolios.png'
-import sobreMesa from '../assets/images/proj-icons/sobreMesa.png'
 import chatBot from '../assets/images/proj-icons/chatbot_playground.png'
 import aiBrainstorm from '../assets/images/proj-icons/brainstrom.png'
 import promptEngineer from '../assets/images/proj-icons/promptEngineer.png'
@@ -72,13 +71,6 @@ export const codeProjs = [
         techSpec: "React, HTML, CSS",
         description: "My portfolio site detailing work in coding and instructional design. Obviously, I have deployed this application. I used GitHub pages and the gh-pages package to host a live version of the site."
     },
-    {
-        projIcon: sobreMesa,
-        title: "Sobre Mesa",
-        url: "https://github.com/Lopez-CL/sobreMesa",
-        techSpec: "HTML, CSS, JavaScript, React, Material UI, Nodejs, MongoDB, Mongoose",
-        description: "IN PROGRESS: MERN application. Idea for the web application arose from my interest in collecting the delicious meals prepared and shared across my Puerto Rican family. Utilizes the Material UI framework to enhance UI among other features."
-    }, 
     {
         projIcon: chatBot,
         title: "Chatbot Playground",
